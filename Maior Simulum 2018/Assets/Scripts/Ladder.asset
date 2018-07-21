@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce79528dcab12a145b8bbffa6da3526b, type: 3}
+  m_Name: Ladder
+  m_EditorClassIdentifier: 
+  Health: 30
+  Cost: 40
+  Size: 0
+  Prefab: {fileID: 1903571425938782, guid: fd85b07d7ad439340b6aae451584e702, type: 2}
+  TOP: {fileID: 1526110748465668, guid: f5ebbf74570baee41a6b6143a3941a01, type: 2}
+  resourceCostType: Wood

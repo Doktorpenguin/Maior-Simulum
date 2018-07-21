@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2d4e688dd6a955c4d9321603a3b717b0
+timeCreated: 1522888284
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - heldObject: {fileID: 100006, guid: 1dbb4f95019f17d4eac19717217652db, type: 3}
+  - Blueprint: {fileID: 100006, guid: 1dbb4f95019f17d4eac19717217652db, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
