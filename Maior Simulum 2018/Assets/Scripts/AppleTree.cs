@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class AppleTree : TreeScript {
-
-	void Start () {
-		
-		Health = 10;
-
-	}
 	
+	public Apple[] Apples;
+	public Transform appleParent;
+
+	override public void Start()
+	{
+		base.Start();
+		Apples = appleParent.GetComponentsInChildren<Apple>();
+	}
+
 	void Update () {
 		
 		if (Health <= 0 && Dead == false)
@@ -19,13 +22,16 @@ public class AppleTree : TreeScript {
 
 		}
 
-
 	}
 
 	override public void Death ()
 	{
 
 		base.Death();
+		foreach (Apple item in Apples)
+		{
+			item.Drop();
+		}
 
 
 	}
@@ -39,8 +45,17 @@ public class AppleTree : TreeScript {
 			Health += -attack;
 			//Animation is played to show the player the tree was hit.
 			Anim.Play("AppleTreeWiggle");
-			//The wood the player receives after hitting the tree
+			//The wood the player receives after hitting the tree.
 			IC.woodRSC += Random.Range(3,5);
+			//Makes all the apples attached to the tree fall when its hit.
+			foreach (Apple item in Apples)
+			{
+				var numb = Random.Range(0,1);
+				if (numb == 0)
+				{
+					item.Drop();
+				}
+			}
 		}
 
 	}

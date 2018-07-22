@@ -6,9 +6,9 @@ public class TreeScript : MonoBehaviour {
 
 	public int Health;
 	public bool Dead = false;
-	protected InventoryController IC;
+	public InventoryController IC;
 	protected Animation Anim;
-	void Start () {
+	virtual public void Start () {
 		IC = GameObject.Find("Player").GetComponent<InventoryController>();
 		Anim = GetComponent<Animation>();
 		Health = 10;
