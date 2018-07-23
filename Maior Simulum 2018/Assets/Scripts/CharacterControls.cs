@@ -138,6 +138,11 @@ public class CharacterControls : MonoBehaviour {
                     //Then Destroys said particle system.
                     Destroy(treeFX, 1f);
                 }
+
+                if (hit.transform.gameObject.tag == "Item")
+                {
+                    ItemBehavior Target = hit.transform.gameObject.GetComponent<ItemBehavior>();
+                }
 				
 			}
 

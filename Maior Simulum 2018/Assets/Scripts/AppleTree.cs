@@ -50,11 +50,14 @@ public class AppleTree : TreeScript {
 			//Makes all the apples attached to the tree fall when its hit.
 			foreach (Apple item in Apples)
 			{
-				var numb = Random.Range(0,1);
+				var numb = Random.Range(0,5);
+				Debug.Log(numb);
 				if (numb == 0)
 				{
 					item.Drop();
 				}
+
+				else {}
 			}
 		}
 
